@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>MiawTip.co - Daftar</title>
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <table width="100%" border="0" cellpadding="10">
+            <tr>
+                <td align="left">
+                    <!-- Klik Logo/Nama untuk kembali ke Beranda -->
+                    <a href="index.html" style="text-decoration: none; color: black;"><h2>MiawTip.co</h2></a>
+                </td>
+                <td align="right">
+                    <a href="login.html"><button type="button">LOGIN</button></a>
+                    <a href="daftar.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 10px;">Daftar</a>
+                </td>
+            </tr>
+        </table>
+        <hr align="center" width="100%" color="black" size="2">
+    </header>
+
+    <br><br>
+
+    <!-- Form Registrasi Utama -->
+    <main>
+        <center>
+            <table border="1" cellpadding="20" cellspacing="0" width="400" bgcolor="#f0f8ff">
+                <tr>
+                    <td>
+                        <form action="" method="POST">
+                            
+                            <!-- Judul Form -->
+                            <h2 align="center">Daftar</h2>
+
+                            <!-- Input Nama Lengkap -->
+                            <p>
+                                <label for="nama"><b>Nama Lengkap</b></label><br>
+                                <input type="text" id="nama" name="nama_lengkap" placeholder="Masukkan nama lengkap" required style="width: 95%; padding: 8px; margin-top: 5px;">
+                            </p>
+
+                            <!-- Input Username -->
+                            <p>
+                                <label for="username"><b>Username</b></label><br>
+                                <input type="text" id="username" name="username" placeholder="Masukkan username" required style="width: 95%; padding: 8px; margin-top: 5px;">
+                            </p>
+
+                            <!-- Input Email -->
+                            <p>
+                                <label for="email"><b>Email</b></label><br>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email" required style="width: 95%; padding: 8px; margin-top: 5px;">
+                            </p>
+
+                            <!-- Input Password -->
+                            <p>
+                                <label for="password"><b>Password</b></label><br>
+                                <input type="password" id="password" name="password" placeholder="Masukkan password" required style="width: 95%; padding: 8px; margin-top: 5px;">
+                            </p>
+
+                            <br>
+
+                            <!-- Tombol Submit -->
+                            <p align="center">
+                                <button type="submit" style="width: 100%; padding: 10px; background-color: #3182ce; color: white; border: none; font-weight: bold; cursor: pointer;">
+                                    DAFTAR SEKARANG
+                                </button>
+                            </p>
+
+                            <!-- Link ke Halaman Login -->
+                            <p align="center">
+                                Udah punya akun? <a href="login.html"><b>Masuk di sini</b></a>
+                            </p>
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </main>
+
+</body>
+</html>
