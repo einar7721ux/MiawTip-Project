@@ -1,85 +1,56 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>MiawTip.co - Daftar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="login-page">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav">
+        <a href="Login.html" class="login-nav-link">Login</a>
+        <a href="Register.html" class="login-nav-button">Daftar</a>
+      </nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
 
-    <!-- Header / Navigation Bar -->
-    <header>
-        <table width="100%" border="0" cellpadding="10">
-            <tr>
-                <td align="left">
-                    <!-- Klik Logo/Nama untuk kembali ke Beranda -->
-                    <a href="index.html" style="text-decoration: none; color: black;"><h2>MiawTip.co</h2></a>
-                </td>
-                <td align="right">
-                    <a href="login.html"><button type="button">LOGIN</button></a>
-                    <a href="daftar.html" style="text-decoration: none; color: black; font-weight: bold; margin-left: 10px;">Daftar</a>
-                </td>
-            </tr>
-        </table>
-        <hr align="center" width="100%" color="black" size="2">
-    </header>
+  <main class="register-main">
+    <section class="register-card" aria-labelledby="register-title">
+      <h1 id="register-title">Buat Akun</h1>
+      <p class="register-description">Daftar untuk mulai menerima dukungan.</p>
 
-    <br><br>
+      <form class="register-form">
+        <div class="register-field">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama_lengkap" placeholder="Masukkan nama lengkap" autocomplete="name" required>
+        </div>
 
-    <!-- Form Registrasi Utama -->
-    <main>
-        <center>
-            <table border="1" cellpadding="20" cellspacing="0" width="400" bgcolor="#f0f8ff">
-                <tr>
-                    <td>
-                        <form action="" method="POST">
-                            
-                            <!-- Judul Form -->
-                            <h2 align="center">Daftar</h2>
+        <div class="register-field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Pilih username" autocomplete="username" required>
+        </div>
 
-                            <!-- Input Nama Lengkap -->
-                            <p>
-                                <label for="nama"><b>Nama Lengkap</b></label><br>
-                                <input type="text" id="nama" name="nama_lengkap" placeholder="Masukkan nama lengkap" required style="width: 95%; padding: 8px; margin-top: 5px;">
-                            </p>
+        <div class="register-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+        </div>
 
-                            <!-- Input Username -->
-                            <p>
-                                <label for="username"><b>Username</b></label><br>
-                                <input type="text" id="username" name="username" placeholder="Masukkan username" required style="width: 95%; padding: 8px; margin-top: 5px;">
-                            </p>
+        <div class="register-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Buat password" autocomplete="new-password" required>
+        </div>
 
-                            <!-- Input Email -->
-                            <p>
-                                <label for="email"><b>Email</b></label><br>
-                                <input type="email" id="email" name="email" placeholder="Masukkan email" required style="width: 95%; padding: 8px; margin-top: 5px;">
-                            </p>
-
-                            <!-- Input Password -->
-                            <p>
-                                <label for="password"><b>Password</b></label><br>
-                                <input type="password" id="password" name="password" placeholder="Masukkan password" required style="width: 95%; padding: 8px; margin-top: 5px;">
-                            </p>
-
-                            <br>
-
-                            <!-- Tombol Submit -->
-                            <p align="center">
-                                <button type="submit" style="width: 100%; padding: 10px; background-color: #3182ce; color: white; border: none; font-weight: bold; cursor: pointer;">
-                                    DAFTAR SEKARANG
-                                </button>
-                            </p>
-
-                            <!-- Link ke Halaman Login -->
-                            <p align="center">
-                                Udah punya akun? <a href="login.html"><b>Masuk di sini</b></a>
-                            </p>
-
-                        </form>
-                    </td>
-                </tr>
-            </table>
-        </center>
-    </main>
-
+        <button type="button" class="register-submit">Daftar Sekarang</button>
+        <p class="register-prompt">Sudah punya akun? <a href="Login.html">Login</a></p>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

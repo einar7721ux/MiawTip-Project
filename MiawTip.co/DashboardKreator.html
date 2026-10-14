@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Kreator - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="creator-dashboard">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav"><a href="Profil.html" class="login-nav-link">Profil</a><a href="Pengaturan.html" class="login-nav-button">Pengaturan</a></nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
+  <main class="workspace">
+    <aside class="workspace-sidebar">
+      <p class="sidebar-title">Menu Kreator</p>
+      <a href="DashboardKreator.html" class="sidebar-link active">Dashboard</a>
+      <a href="Profil.html" class="sidebar-link">Profil</a>
+      <a href="Riwayat.html" class="sidebar-link">Riwayat</a>
+      <a href="Pengaturan.html" class="sidebar-link">Pengaturan</a>
+    </aside>
+    <section class="workspace-content">
+      <div class="workspace-heading">
+        <div><p class="page-eyebrow">Ringkasan akun</p><h1>Dashboard Kreator</h1></div>
+        <a href="Donasi.html" class="small-action">Lihat halaman donasi</a>
+      </div>
+      <div class="summary-grid">
+        <article class="summary-card"><p>Total sawer</p><strong data-dashboard="total">Rp0</strong><span data-dashboard="count">0 dukungan</span></article>
+        <article class="summary-card"><p>Top supporter</p><strong class="summary-supporter" data-dashboard="top">Belum ada</strong><span data-dashboard="top-total">Belum ada dukungan</span></article>
+        <article class="summary-card"><p>Rata-rata donasi</p><strong data-dashboard="average">Rp0</strong><span>Per dukungan</span></article>
+      </div>
+      <section class="content-panel">
+        <div class="panel-heading"><h2>Riwayat terbaru</h2><a href="Riwayat.html">Lihat semua</a></div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead><tr><th>Supporter</th><th>Pesan</th><th>Tanggal</th><th>Nominal</th></tr></thead>
+            <tbody id="dashboard-history"><tr><td colspan="4" class="empty-state">Belum ada dukungan. Riwayat demo akan muncul setelah donasi dicatat.</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="content-panel">
+        <div class="panel-heading"><h2>Top supporter</h2><a href="Riwayat.html">Buka riwayat</a></div>
+        <ol class="top-supporter-list" id="top-supporters"><li class="empty-state">Belum ada supporter.</li></ol>
+      </section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

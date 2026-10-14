@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfirmasi Donasi - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="donation-confirmation">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav"><a href="Donasi.html" class="login-nav-link">Kembali</a></nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
+  <main class="form-page">
+    <section class="confirmation-card">
+      <div class="confirmation-icon" aria-hidden="true">♥</div>
+      <p class="page-eyebrow">Satu langkah lagi</p>
+      <h1>Konfirmasi Donasi</h1>
+      <p class="muted-text confirmation-intro">Periksa kembali detail dukunganmu sebelum melanjutkan.</p>
+
+      <dl class="donation-receipt">
+        <div><dt>Kreator</dt><dd data-confirm="creator">-</dd></div>
+        <div><dt>Nama pendukung</dt><dd data-confirm="supporter">-</dd></div>
+        <div><dt>Nominal</dt><dd data-confirm="amount">-</dd></div>
+        <div><dt>Metode pembayaran</dt><dd data-confirm="payment">-</dd></div>
+        <div class="receipt-message"><dt>Pesan</dt><dd data-confirm="message">-</dd></div>
+      </dl>
+
+      <div class="demo-note confirmation-demo"></div>
+      <button type="button" class="primary-action" id="confirm-donation">Konfirmasi Donasi</button>
+      <a href="Donasi.html" class="secondary-action">Ubah detail donasi</a>
+      <p class="form-error" id="confirmation-error" role="alert"></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

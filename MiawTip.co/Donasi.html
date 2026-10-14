@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirim Donasi - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="donation">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav">
+        <a href="Login.html" class="login-nav-link">Login</a>
+        <a href="Register.html" class="login-nav-button">Daftar</a>
+      </nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
+  <main class="form-page">
+    <section class="donation-card">
+      <div class="creator-summary">
+        <div class="creator-avatar">CY</div>
+        <div>
+          <p class="page-eyebrow">Kirim dukungan untuk</p>
+          <h1>Kreator</h1>
+          <p class="muted-text">Dukung kreator agar terus berkarya.</p>
+        </div>
+      </div>
+
+      <form id="donation-form">
+        <div class="form-field">
+          <label for="supporter">Nama kamu</label>
+          <input type="text" id="supporter" name="supporter" placeholder="" required>
+        </div>
+
+        <div class="form-field">
+          <label for="amount">Nominal donasi</label>
+          <div class="amount-input">
+            <span>Rp</span>
+            <input type="number" id="amount" name="amount" min="1000" step="1000" placeholder="Minimal 1.000" required>
+          </div>
+          <div class="amount-options">
+            <button type="button" data-amount="5000">Rp5.000</button>
+            <button type="button" data-amount="10000">Rp10.000</button>
+            <button type="button" data-amount="20000">Rp20.000</button>
+            <button type="button" data-amount="50000">Rp50.000</button>
+            <button type="button" data-amount="100000">Rp100.000</button>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Pesan untuk kreator <span class="optional-text">(opsional)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="Tulis pesan dukungan..."></textarea>
+        </div>
+
+        <fieldset class="payment-methods">
+          <legend>Metode pembayaran</legend>
+          <p class="muted-text payment-hint"></p>
+          <div class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="GoPay" required>
+              <img src="gambar/gopay-logo.png" alt="" class="payment-method-image">
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="DANA">
+              <img src="gambar/dana-logo.png" alt="" class="payment-method-image">
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="QRIS">
+              <img src="gambar/qris-logo.png" alt="" class="payment-method-image">
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="primary-action">Lanjutkan</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
