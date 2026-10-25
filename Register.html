@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav">
+        <a href="Login.html" class="login-nav-link">Login</a>
+        <a href="Register.html" class="login-nav-button">Daftar</a>
+      </nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
+
+  <main class="register-main">
+    <section class="register-card" aria-labelledby="register-title">
+      <h1 id="register-title">Buat Akun</h1>
+      <p class="register-description">Daftar untuk mulai menerima dukungan.</p>
+
+      <form class="register-form">
+        <div class="register-field">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama_lengkap" placeholder="Masukkan nama lengkap" autocomplete="name" required>
+        </div>
+
+        <div class="register-field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Pilih username" autocomplete="username" required>
+        </div>
+
+        <div class="register-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="register-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Buat password" autocomplete="new-password" required>
+        </div>
+
+        <button type="button" class="register-submit">Daftar Sekarang</button>
+        <p class="register-prompt">Sudah punya akun? <a href="Login.html">Login</a></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Kreator - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="creator-profile">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav"><a href="DashboardKreator.html" class="login-nav-link">Dashboard</a><a href="Pengaturan.html" class="login-nav-button">Pengaturan</a></nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
+  <main class="workspace">
+    <aside class="workspace-sidebar">
+      <p class="sidebar-title">Menu Kreator</p>
+      <a href="DashboardKreator.html" class="sidebar-link">Dashboard</a>
+      <a href="Profil.html" class="sidebar-link active">Profil</a>
+      <a href="Riwayat.html" class="sidebar-link">Riwayat</a>
+      <a href="Pengaturan.html" class="sidebar-link">Pengaturan</a>
+    </aside>
+    <section class="workspace-content narrow-content">
+      <div class="workspace-heading"><div><p class="page-eyebrow">Kelola halaman kreator</p><h1>Profil</h1></div></div>
+      <section class="content-panel">
+        <form id="profile-form" class="profile-form">
+          <div class="profile-avatar"><img src="gambar/Profil.jpeg" alt="Ikon profil kreator"></div>
+          <p class="muted-text profile-image-note">Foto profil kreator.</p>
+          <div class="form-field"><label for="profile-name">Nama kreator</label><input type="text" id="profile-name" name="name" required></div>
+          <div class="form-field"><label for="profile-username">Username</label><input type="text" id="profile-username" name="username" required></div>
+          <div class="form-field"><label for="profile-bio">Tentang saya</label><textarea id="profile-bio" name="bio" rows="4" placeholder="Ceritakan sedikit tentang dirimu"></textarea></div>
+          <p class="profile-link">Link donasi: <strong>MiawTip.co/u/<span data-profile="username"></span></strong></p>
+          <button type="submit" class="primary-action">Simpan Profil</button>
+          <p class="form-success" id="profile-success" role="status"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

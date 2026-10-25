@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaturan - MiawTip.co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Jersey+10&family=Jersey+20&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page" data-page="creator-settings">
+  <header class="sticky-header">
+    <div class="header-content login-header-content">
+      <a href="LandingPage.html" class="login-logo">MiawTip.co</a>
+      <nav class="login-nav"><a href="DashboardKreator.html" class="login-nav-link">Dashboard</a><a href="Profil.html" class="login-nav-button">Profil</a></nav>
+    </div>
+    <hr class="login-header-divider">
+  </header>
+  <main class="workspace">
+    <aside class="workspace-sidebar">
+      <p class="sidebar-title">Menu Kreator</p>
+      <a href="DashboardKreator.html" class="sidebar-link">Dashboard</a>
+      <a href="Profil.html" class="sidebar-link">Profil</a>
+      <a href="Riwayat.html" class="sidebar-link">Riwayat</a>
+      <a href="Pengaturan.html" class="sidebar-link active">Pengaturan</a>
+    </aside>
+    <section class="workspace-content narrow-content">
+      <div class="workspace-heading"><div><p class="page-eyebrow">Atur preferensi akun</p><h1>Pengaturan</h1></div></div>
+      <section class="content-panel">
+        <form id="settings-form" class="settings-form">
+          <h2>Notifikasi</h2>
+          <label class="setting-row"><span><strong>Notifikasi dukungan</strong><small>Tampilkan pemberitahuan saat ada dukungan baru.</small></span><input type="checkbox" name="notifications" checked></label>
+          <hr class="settings-divider">
+          <h2>Informasi pencairan dana</h2>
+          <div class="form-field"><label for="bank-name">Nama bank</label><input type="text" id="bank-name" name="bank" placeholder="Contoh: BCA"></div>
+          <div class="form-field"><label for="account-name">Nama pemilik rekening</label><input type="text" id="account-name" name="accountName" placeholder="Nama sesuai rekening"></div>
+          <div class="form-field"><label for="account-number">Nomor rekening</label><input type="number" id="account-number" name="accountNumber" inputmode="numeric" placeholder="Masukkan nomor rekening"></div>
+          <button type="submit" class="primary-action">Simpan Pengaturan</button>
+          <p class="form-success" id="settings-success" role="status"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
